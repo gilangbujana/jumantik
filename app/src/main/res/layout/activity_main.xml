@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btn_signin_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="signInAct"
+            android:background="@color/mainColor"
+            android:text="SIGN IN"
+            android:textSize="40sp"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_signup_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/mainColor"
+            android:text="SIGN UP"
+            android:textSize="40sp"
+            android:onClick="signUpAct"
+            android:padding="10dp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

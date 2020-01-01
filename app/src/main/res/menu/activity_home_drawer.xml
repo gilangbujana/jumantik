@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_profil_menu"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_tentangkami_menu"
+            android:title="Tentang Kami" />
+        <item
+            android:id="@+id/nav_whatsapp"
+            android:icon="@drawable/ic_wa_menu"
+            android:title="WhatsApp" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout_menu"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

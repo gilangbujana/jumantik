@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "666987597337",
+    "firebase_url": "https://jalankuy-1f05b.firebaseio.com",
+    "project_id": "jalankuy-1f05b",
+    "storage_bucket": "jalankuy-1f05b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666987597337:android:e59869386b17f547682488",
+        "android_client_info": {
+          "package_name": "id.co.wow.jumantik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666987597337-5jv2t72fap6rup6rs69cmvd8vi98ngge.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.co.wow.jumantik",
+            "certificate_hash": "ce8c4d9c0d0ec1b0caaa239e9e2f607daac28bac"
+          }
+        },
+        {
+          "client_id": "666987597337-5i9eqc2ve4cv9hg735j5ris2rl315gro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJdqek3Do2q9hyFeI-KDx44LRwMQX6oE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666987597337-5i9eqc2ve4cv9hg735j5ris2rl315gro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">Jumantik</string>
+    <string name="pertanyaanDBSignUp">Apakah anda atau keluarga anda yang tinggal bersama anda pernah terkena DBD?</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="tab_text_1">DBD</string>
+    <string name="tab_text_2">JUMANTIK</string>
+    <string name="tentang_kami">
+        Jumantik Mandiri merupakan aplikasi berbasis android
+        yang dipergunakan untuk anggota keluarga yang bersedia
+        diberikan pelatihan dan menjadi juru pemantau jentik dirumahnya
+        masing-masing. Sistem ini sedang dikembangkan oleh Universitas YARSI
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Soal_1">1. Apa penyebab penyakit demam berdarah?</string>
+    <string name="a_1">Virus / bibit penyakit yang sangat kecil </string>
+    <string name="b_1">Gigitan serangga (nyamuk, lalat, dan lain-lain) </string>
+    <string name="c_1">Makanan / minuman yang tidak dimasak dengan baik / bersih </string>
+    <string name="d_1">Terkena kutukan / guna-guna  </string>
+    <string name="e_1">Tidak tahu </string>
+
+    <string name="Soal_2">2. Bagaimana tanda-tanda orang yang menderita penyakit demam berdarah ?(boleh lebih dari satu jawaban) </string>
+    <string name="a_2">Demam mendadak </string>
+    <string name="b_2">Sakit kepala </string>
+    <string name="c_2">Nyeri sendi / tulang / otot </string>
+    <string name="d_2">Terkena kutukan / guna-guna  </string>
+    <string name="e_2">Nyeri ulu hati </string>
+    <string name="f_2">Perdarahan berupa : bintik-bintik merah di kulit, perdarahan gusi / hidung,  </string>
+    <string name="g_2">batuk darah, berak darah, dan lain-lain. </string>
+    <string name="h_2">•Tidak tahu </string>
+
+    <string name="Soal_3">3. Demam berdarah berbahaya karena </string>
+    <string name="a_3">Menyebabkan kematian </string>
+    <string name="b_3">Menyebabkan kecacatan </string>
+    <string name="c_3">Menularkan ke anggota keluarga yang lain  </string>
+    <string name="d_3">Tidak tahu </string>
+
+    <string name="Soal_4">4. Bagaimana cara penyebaran penyakit demam berdarah ? </string>
+    <string name="a_4">Melalui gigitan nyamuk yang sebelumnya telah menggigit penderita demam berdarah  </string>
+    <string name="b_4">Melalui debu / angin  </string>
+    <string name="c_4">Melalui batuk / dahak </string>
+    <string name="d_4">Bersentuhan dengan penderita demam berdarah </string>
+    <string name="e_4">Melalui barang yang dipakai oleh penderita demam berdarah </string>
+    <string name="f_4">Tidak tahu </string>
+
+    <string name="Soal_5">5. Nyamuk Aedes aegypti menggigit/menghisap darah manusia biasanya pada </string>
+    <string name="a_5">Malam hari </string>
+    <string name="b_5">Siang hari </string>
+    <string name="c_5">Pagi dan sore hari </string>
+    <string name="d_5">Tidak tahu </string>
+
+    <string name="Soal_6">6. Yang dimaksud dengan 3M adalah </string>
+    <string name="a_6">Menguras, menutup dan membuang </string>
+    <string name="b_6">Menguras, mengubur dan menutup </string>
+    <string name="c_6">Menutup, mencampakkan dan membuang </string>
+    <string name="d_6">Tidak tahu </string>
+
+    <string name="Soal_7">7. Ciri-ciri nyamuk DBD adalah </string>
+    <string name="a_7">Nyamuk berwarna hitam penuh </string>
+    <string name="b_7">Nyamuk berwarna hitam dan belang-belang putih pada seluruh badannya. </string>
+    <string name="c_7">Nyamuk berwarna putih </string>
+    <string name="d_7">Tidak tahu </string>
+
+    <string name="Soal_8">8. Fogging ( pengasapan) dilakukan untuk membunuh </string>
+    <string name="a_8">Jentik nyamuk </string>
+    <string name="b_8">Pupa/ kepompong nyamuk  </string>
+    <string name="c_8">Nyamuk dewasa </string>
+    <string name="d_8">Tidak tahu </string>
+
+    <string name="Soal_9">9. Abate digunakan untuk membunuh yaitu  </string>
+    <string name="a_9">Jentik nyamuk </string>
+    <string name="b_9">Nyamuk dewasa </string>
+    <string name="c_9">Nyamuk muda </string>
+    <string name="d_9">Tidak tahu </string>
+
+    <string name="Soal_10">10. Nyamuk Aedes aegypti dapat berkembang biak di …………  </string>
+    <string name="a_10">Vas bunga, bak mandi, pot </string>
+    <string name="b_10">Parit </string>
+    <string name="c_10">Sawah </string>
+    <string name="d_10">Tidak tahu </string>
+
+    <string name="Soal_11">11. Pencegahan yang paling sederhana dan tepat untuk penyakit DBD yaitu  </string>
+    <string name="a_11">Memberantas jentik- jentik nyamuk DBD </string>
+    <string name="b_11">Melakukan pengasapan (fogging) </string>
+    <string name="c_11">Membuang barang-barang yang bisa menjadi sarang nyamuk </string>
+    <string name="d_11">Tidak tahu </string>
+
+    <string name="Soal_12">12. Salah satu pencegahan penyakit DBD dengan menguras bak mandi dilakukan selama ....... </string>
+    <string name="a_12">1 minggu sekali </string>
+    <string name="b_12">3 minggu sekali </string>
+    <string name="c_12">1 bulan sekali </string>
+    <string name="d_12">Tidak tahu </string>
+
+    <string name="Soal_13">13. Daur hidup nyamuk Aedes aegypty yaitu......... </string>
+    <string name="a_13">Telur, jentik, kepompong dan nyamuk  </string>
+    <string name="b_13">Telur, jentik dan nyamuk  </string>
+    <string name="c_13">Jentik dan kepompong </string>
+    <string name="d_13">Tidak tahu </string>
+
+    <string name="Soal_14">14. Nyamuk yang mengigit manusia yaitu............... </string>
+    <string name="a_14">Nyamuk jantan </string>
+    <string name="b_14">Nyamuk betina </string>
+    <string name="c_14">Tidak tahu </string>
+
+    <string name="Soal_15">15. Tempat-tempat apa saja yang berpotensi / dapat menjadi tempat bersarang nyamuk demam berdarah ? (boleh lebih dari satu jawaban)  </string>
+    <string name="a_15">Tempat penampungan air (tempayan) yang tidak tertutup  </string>
+    <string name="b_15">Bak mandi  </string>
+    <string name="c_15">Tempat minum burung  </string>
+    <string name="d_15">Kaleng bekas yang terisi air </string>
+    <string name="e_15">Ban bekas yang terisi air  </string>
+    <string name="f_15">Tidak tahu </string>
+
+    <string name="Soal_16">16. Bagaimana cara mencegah penyakit demam berdarah ? (boleh lebih dari satu jawaban) </string>
+    <string name="a_16">Menguras bak mandi secara teratur minimal 1 minggu sekali  </string>
+    <string name="b_16">Menutup tempat penyimpanan air yang dapat menjadi tempat berkembang biak nyamuk  </string>
+    <string name="c_16">Mengubur / membersihkan barang bekas yang dapat menampung air (kaleng bekas, botol bekas, wadah plastik bekas, ban bekas, dan lain-lain)  </string>
+    <string name="d_16">Memberikan insektisida pembunuh larva nyamuk (contoh : abate) pada tempat penyimpanan air / bak mandi setiap 3-4 bulan sekali  </string>
+    <string name="e_16">Menanami kolam dengan ikan pemakan jentik nyamuk (contoh : ikan adu / ikan cupang)  </string>
+    <string name="f_16">Tidak tahu </string>
+
+    <string name="Soal_17">17. Apakah anda pernah mendengar tentang pengendalian nyamuk Demam Berdarah Dengue (DBD)? </string>
+    <string name="a_17">Pernah </string>
+    <string name="b_17">Tidak pernah </string>
+
+
+    <string name="petunjuk_laporan">isi formulir laporan pemantauan SISMANTIK yang terdiri dari pernyataan yang dapat digeser untuk
+    melihat pernyataan selanjutnya</string>
+
+    <string name="definisi_dbd">Adalah penyakit menular yang ditandai dengan panas (demam) disertai
+pendarahan yang disebabkan oleh virus Dengue dan ditularkan melalui
+gigitan nyamuk Aedes  yang hidup di dalam dan di sekitar rumah dan
+dapat menyebabkan kematian jika terlambat dilakukan pertolongan</string>
+
+    <string name="gejala_dbd">1. Mendadak panas tinggi (demam) lebih dari dua hari\n
+ 2. Nyeri ulu hati\n
+3. Bintik-bintik merah pada kulit\n
+4. Dapat terjadi mimisan, muntah dan buang air besar bercampur darah</string>
+
+    <string name="penularan_dbd">1. DBD ditularkan oleh nyamuk Aedes aegypti dan Aedes albopictus betina (terutama nyamuk Aedes aegypti)\n
+2. Nyamuk tersebut mendapatkan virus dengue sewaktu menggigit/menghisap darah orang yang sakit DBD\n
+3. Virus dengue yang terhisap akan berkembang biak dan menyebar keseluruh tubuh nyamuk, termasuk kelenjar liurnya.\n
+4. Bila nyamuk tersebut menggigit/menghisap darah orang lain, virus itu akan dipindahkan bersama air liur nyamuk.\n </string>
+
+
+    <string name="definisi_jumantik">Jumantik adalah anggota keluarga yang bersedia diberikan pelatihan dan bersedia
+menjadi juru pemantau jentik di rumahnya masing-masing</string>
+
+    <string name="tugas_jumantik_mandiri">Melakukan pemantauan jentik setiap minggu sekali dan melakukan
+pemberantasan jentik</string>
+
+    <string name="cara_pemeriksaan_jentik">
+        a.  Mencari semua tempat perkembangbiakan jentik nyamuk yang ada di
+            dalam maupun di lingkungan rumah.\n
+        b.  Periksalah bak mandi/WC, tempayan, drum dan tempat-tempat
+            penampungan air lainnya.\n
+        c.  Periksa juga tempat-tempat berpotensi menjadi tempat
+            perkembangbiakan nyamuk misalnya vas bunga, tempat minum burung,
+            kaleng-kaleng bekas, botol plastik, ban bekas, tatakan pot bunga, tatakan
+            dispenser dan lain-lain.\n
+        d.  Tempat lain di sekitar rumah yaitu talang/saluran air yang terbuka/tidak\n
+            lancar, lubang-lubang pada potongan bambu atau pohon lainnya.\n
+        e.  Jika pada penglihatan pertama tidak menemukan jentik, tunggu kira-kira
+            ½ - 1 menit untuk memastikan bahwa benar-benar tidak ada jentik.\n
+        f.  Gunakan senter untuk memeriksa jentik di tempat gelap atau air keruh.\n
+        g.  Mencatat ada tidaknya jentik pada kartu Jumantik-PSN Anak Sekolah.\n
+        h.  Periksalah bak mandi/WC, tempayan, drum dan tempat-tempat
+            penampungan air lainnya.\n
+        i.  Jika tidak tampak coba ditunggu sampai ± 0,5-1 menit, jika ada jentik
+            pasti akan muncul ke permukaan air untuk bernafas.\n
+        j.  Jika tidak tampak karena wadah air tersebut terlalu dalam dan gelap,
+            gunakan senter.
+    </string>
+
+    <string name="jenis_tempat_nyamuk">
+        Ada dua jenis tempat perkembangbiakan nyamuk DBD:\n
+        1) Buatan:\n
+               Tempat penampungan air (TPA) untuk keperluan sehari-hari, seperti:
+                drum, tangki reservoir, tempayan, bak mandi/wc, dan ember.\n
+               Tempat penampungan air bukan untuk keperluan sehari-hari seperti:
+                tempat minum burung, vas bunga, perangkap semut, bak kontrol
+                pembuangan air, tempat pembuangan air kulkas/dispenser, barang-
+                barang bekas (contoh : ban, kaleng, botol, plastik, dll).\n
+        2) Alamiah\n
+            Tempat penampungan air alamiah seperti: lubang pohon, lubang batu,
+            pelepah daun, tempurung kelapa, pelepah pisang dan potongan bambu
+            dan tempurung coklat/karet, dll.
+    </string>
+
+    <string name="pemberantasan_jentik">
+         Pemberantasan jentik dilakukan tiap seminggu sekali\n
+         Pemberantasan sarang Nyamuk (PSN) dengan kegiatan 3M yaitu:\n
+             Menguras dan menyikat tempat-tempat penampungan air, seperti bak
+            mandi/wc, drum, dan lain-lain seminggu sekali (M1)\n
+             Menutup rapat-rapat tempat penampungan air, seperti gentong
+            air/tempayan, dan lain-lain (M2)\n
+             Memanfaatkan atau mendaur ulang barang-barang bekas yang dapat
+            menampung air hujan (M3).\n
+    </string>
+
+
+</resources>

@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Quiz.QuizActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!--SOAL 1 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_1"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_1"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_1"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_1"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_1"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_1"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_1"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_1"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_1"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/e_1"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/e_1"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <!--SOAL 2 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_2"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <CheckBox
+            android:id="@+id/a_2"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_2"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/b_2"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_2"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/c_2"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_2"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/d_2"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_2"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/e_2"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/e_2"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <!--SOAL 3 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_3"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_3"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_3"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_3"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_3"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_3"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_3"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_3"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_3"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <!--SOAL 4 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_4"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_4"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_4"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_4"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_4"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_4"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_4"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_4"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_4"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/e_4"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/e_4"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/f_4"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f_4"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <!--SOAL 5 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_5"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_5"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_5"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_5"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_5"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_5"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_5"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_5"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_5"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <!--SOAL 6 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_6"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_6"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_6"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_6"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_6"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_6"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_6"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_6"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_6"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <!--SOAL 7 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_7"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_7"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_7"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_7"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_7"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_7"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_7"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_7"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_7"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <!--SOAL 8 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_8"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_8"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_8"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_8"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_8"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_8"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_8"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_8"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_8"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+
+    <!--SOAL 9 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_9"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_9"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_9"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_9"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_9"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_9"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_9"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_9"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_9"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+
+    <!--SOAL 10 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_10"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_10"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_10"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_10"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_10"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_10"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_10"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_10"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_10"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <!--SOAL 11 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_11"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_11"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_11"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_11"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_11"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_11"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_11"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_11"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_11"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+    <!--SOAL 12 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_12"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_12"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_12"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_12"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_12"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_12"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_12"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_12"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_12"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+
+    <!--SOAL 13 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_13"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_13"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_13"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_13"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_13"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_13"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_13"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/d_13"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d_13"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+
+    <!--SOAL 14 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_14"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_14"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_14"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_14"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_14"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/c_14"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_14"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+
+
+    <!--SOAL 15 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_15"
+        android:textColor="#000"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginBottom="20dp">
+    <CheckBox
+        android:id="@+id/a_15"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_15"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/b_15"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b_15"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/c_15"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c_15"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/d_15"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_15"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/e_15"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_15"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/f_15"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f_15"
+        android:textSize="20sp"/>
+</LinearLayout>
+
+    <!--SOAL 16 -->
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_16"
+        android:textColor="#000"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginBottom="20dp">
+    <CheckBox
+        android:id="@+id/a_16"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_16"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/b_16"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b_16"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/c_16"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c_16"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/d_16"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_16"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/e_16"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_16"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/f_16"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/f_16"
+        android:textSize="20sp"/>
+</LinearLayout>
+
+    <!--SOAL 17
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Soal_17"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp">
+        <RadioButton
+            android:id="@+id/a_17"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_17"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/b_17"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b_17"
+            android:textSize="20sp"/>
+
+    </RadioGroup> -->
+
+        <Button
+            android:id="@+id/btn_submit_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:text="SUBMIT"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

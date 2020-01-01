@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_tmpt_laporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mainColor"
+        android:text="1. Bak Mandi"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogrup_jentik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RadioButton
+        android:id="@+id/rb_aedes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jentik Aedes"
+        android:paddingLeft="10dp"
+        android:textColor="@color/mainColor"
+        android:textSize="20sp"/>
+
+    <RadioButton
+        android:id="@+id/rb_nonaedes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jentik Non Aedes"
+        android:paddingLeft="10dp"
+        android:textColor="@color/mainColor"
+        android:textSize="20sp"/>
+
+    <RadioButton
+        android:id="@+id/rb_tdkjentik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada Jentik"
+        android:paddingLeft="10dp"
+        android:textColor="@color/mainColor"
+        android:textSize="20sp"/>
+
+    </RadioGroup>
+
+</LinearLayout>

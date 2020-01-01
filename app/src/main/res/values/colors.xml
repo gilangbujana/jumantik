@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#028E8F</color>
+    <color name="mainColor">#028E8F</color>
+    <color name="white">#fff</color>
+    <color name="red">#F30D0D</color>
+    <color name="green">#2DC535</color>
+    <color name="shimmer">#dddddd</color>
+    <color name="bg_srv">#706A6A</color>
+</resources>

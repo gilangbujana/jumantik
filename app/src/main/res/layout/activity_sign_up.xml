@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainColor"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:padding="60dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="40dp"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="sign up"
+            android:textAllCaps="true"
+            android:textColor="@color/mainColor"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/edit_nama_signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Nama Lengkap"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:backgroundTint="@color/mainColor"
+            android:textColor="@color/mainColor"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_namap_signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Nama Panggilan"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:backgroundTint="@color/mainColor"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_notelp_signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="No. Telp"
+            android:backgroundTint="@color/mainColor"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_alamat_signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Alamat"
+            android:textSize="20sp"
+            android:backgroundTint="@color/mainColor"
+            android:inputType="textMultiLine"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:text="@string/pertanyaanDBSignUp"
+                android:layout_height="match_parent"
+                android:textColor="@color/mainColor"
+                android:textSize="12sp"
+                android:layout_weight="1"/>
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_ya_signup"
+                    android:layout_width="wrap_content"
+                    android:text="Ya"
+                    android:textAlignment="center"
+                    android:button="@null"
+                    android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                    android:textColor="@color/mainColor"
+                    android:drawableTint="@color/mainColor"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rb_tdk_signup"
+                    android:layout_width="wrap_content"
+                    android:text="Tidak"
+                    android:button="@null"
+                    android:drawableBottom="?android:attr/listChoiceIndicatorSingle"
+                    android:textAlignment="center"
+                    android:textColor="@color/mainColor"
+                    android:drawableTint="@color/mainColor"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="15dp"
+            android:text="SIGN UP"
+            android:onClick="submit"
+            android:textSize="20sp"
+            android:background="@color/mainColor"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

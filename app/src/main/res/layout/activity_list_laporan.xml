@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Laporan.ListLaporanActivity">
+
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout_list_laporan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.todkars.shimmer.ShimmerRecyclerView
+            android:id="@+id/srv_list_laporan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:shimmer_recycler_layout="@layout/item_riwayat_laporan_shimmer"
+            app:shimmer_recycler_item_count="10" />
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_belum_ada_laporan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="BELUM ADA\nLAPORAN"
+        android:textSize="40sp"
+        android:visibility="gone"
+        android:textColor="#000"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/ic_add_laporan"
+        android:onClick="toLaporanActivity"
+        android:backgroundTint="@color/mainColor"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Laporan.DetailLaporanActivity">
+    <!--
+        <TextView
+            android:id="@+id/tv_judul_laporan_detail"
+            android:layout_marginVertical="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/mainColor"
+            android:text="LAPORAN 2 JAM YANG LALU"/>
+
+        <TextView
+            android:id="@+id/tv_verfikasi_detail"
+            android:padding="12dp"
+           android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="BELUM DIKUNJUNGI KADER"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/unverified"/> -->
+  <!--  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/mainColor"
+                android:text="LAPORAN DALAM RUMAH"/>
+
+            <de.codecrafters.tableview.TableView
+                android:id="@+id/ltv_dr_detail"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:background="@drawable/shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/mainColor"
+                android:text="LAPORAN LUAR RUMAH"/>
+
+            <de.codecrafters.tableview.TableView
+                android:id="@+id/ltv_lr_detail"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/mainColor"
+                android:text="FOTO LAPORAN"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_foto_detail"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="15dp"
+                android:padding="15dp"
+                android:background="@drawable/bg_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/mainColor"
+                android:text="KETERANGAN LAPORAN"/>
+
+            <TextView
+                android:id="@+id/tv_ket_laporan_detail"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_info"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:scrollbars="vertical"
+                android:textColor="#000"
+                android:text="KETERANGAN LAPORAN"/>
+
+
+
+                <TextView
+                    android:id="@+id/tv_tgl_laporan_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:padding="10dp"
+                    android:background="@drawable/shape"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/mainColor"
+                    android:text="2 JAM YANG LALU"/>
+
+                <TextView
+                    android:id="@+id/tv_verfikasi_detail"
+                    android:padding="12dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="BELUM DIKUNJUNGI KADER"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/unverified"/>
+
+        </LinearLayout>
+
+    <!--</ScrollView>-->
+
+</LinearLayout>

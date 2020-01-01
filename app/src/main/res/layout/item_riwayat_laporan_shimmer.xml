@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="7dp"
+    android:layout_marginVertical="10dp"
+    android:gravity="center"
+    android:layout_height="90dp">
+
+
+    <TextView
+        android:foreground="@color/shimmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="LAPORAN"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:foreground="@color/shimmer"
+        android:text="BELUM TERVERIFIKASI"
+        android:background="@drawable/verified"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:foreground="@color/shimmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mainColor"
+        android:text="KLIK UNTUK LIHAT LAPORAN "
+        android:textStyle="bold"/>
+
+</LinearLayout>

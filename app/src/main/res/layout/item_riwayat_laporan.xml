@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="13dp"
+    android:gravity="center"
+    android:background="@drawable/shape"
+    android:layout_height="100dp">
+
+
+    <TextView
+        android:id="@+id/tv_tgllaporan_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="LAPORAN"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tv_statuslaporan_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:text="BELUM TERVERIFIKASI"
+        android:background="@drawable/verified"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_kliklaporan_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mainColor"
+        android:text="KLIK UNTUK LIHAT LAPORAN "
+        android:textStyle="bold"/>
+
+</LinearLayout>

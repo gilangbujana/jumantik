@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".InfoFragment.JumantikFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/bg_info"
+        android:orientation="vertical"
+        android:layout_weight="5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title_info_jumantik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Definisi"
+                    android:textSize="23sp"
+                    android:layout_marginVertical="25dp"
+                    android:textColor="@color/colorPrimary"/>
+
+
+                <TextView
+                    android:id="@+id/tv_konten_jentik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mainColor"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_defjum"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                app:borderWidth="2dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="DEFINISI"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_tugas_jumantik"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                app:borderWidth="2dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TUGAS\nJUMANTIK"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_pemeriksaan_jentik"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                app:borderWidth="2dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="PEMERIKSAAN\nJENTIK"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_jenis_tempat_nyamuk"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                app:borderWidth="2dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="JENIS\nTEMPAT\nNYAMUK"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_pemberantasan_jentik"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="0dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                app:borderWidth="2dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="PEMBERANTASAN\nJENTIK"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

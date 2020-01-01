@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_add_foto_item"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_del_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_add_foto_item"
+        android:layout_alignRight="@id/iv_add_foto_item"
+        android:layout_margin="7dp"
+        android:background="@drawable/ic_cancel"
+        android:src="@drawable/ic_cancel"/>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.co.wow.jumantik">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Berita.DetailBeritaActivity"
+            android:label="DETAIL BERITA"
+            android:parentActivityName=".Berita.ListBeritaActivity"></activity>
+        <activity android:name=".Berita.ListBeritaActivity"
+            android:label="BERITA TERKINI"
+            android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".ScoreActivity"
+            android:label="NILAI"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".Laporan.DetailLaporanActivity"
+            android:label="DETAIL LAPORAN"
+            android:parentActivityName=".Laporan.ListLaporanActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="TENTANG KAMI"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".Laporan.UploadActivity"
+            android:label="UPLOAD FOTO" />
+        <activity
+            android:name=".Quiz.QuizActivity"
+            android:label="UJI PENGETAHUAN"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ProfilActivity"
+            android:label="PROFIL"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".QRCodeActivity"
+            android:label="KODE QR"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".Laporan.ListLaporanActivity"
+            android:label="RIWAYAT LAPORAN"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".Laporan.LaporanActivity"
+            android:label="LAPORAN"
+            android:parentActivityName=".Laporan.ListLaporanActivity" />
+        <activity
+            android:name=".InfoActivity"
+            android:label="INFO"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="JUMANTIK"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignInActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
