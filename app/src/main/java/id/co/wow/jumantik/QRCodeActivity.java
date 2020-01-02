@@ -6,14 +6,18 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.graphics.RectF;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.view.Display;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 
+import net.glxn.qrgen.android.QRCode;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,6 +25,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidmads.library.qrgenearator.QRGContents;
+import androidmads.library.qrgenearator.QRGEncoder;
 import cz.msebera.android.httpclient.NameValuePair;
 import cz.msebera.android.httpclient.message.BasicNameValuePair;
 
@@ -50,8 +56,26 @@ public class QRCodeActivity extends AppCompatActivity {
     }
 
     void createQRCode(String content) {
-            //Bitmap bitmap = QRCode.from(content).bitmap();
-            //iv_qr.setImageBitmap(bitmap);
+            Bitmap bitmap = QRCode.from(content.trim()).bitmap();
+            iv_qr.setImageBitmap(bitmap);
+        /*WindowManager manager = (WindowManager) getSystemService(WINDOW_SERVICE);
+        Display display = manager.getDefaultDisplay();
+        Point point = new Point();
+        display.getSize(point);
+        int width = point.x;
+        int height = point.y;
+        int smallerDimension = width < height ? width : height;
+        smallerDimension = smallerDimension * 3 / 4;
+        QRGEncoder qrgEncoder = new QRGEncoder(content, null, QRGContents.Type.TEXT, smallerDimension);
+        qrgEncoder.setColorBlack(Color.RED);
+        qrgEncoder.setColorWhite(Color.BLUE);
+
+            // Getting QR-Code as Bitmap
+           Bitmap bitmap = qrgEncoder.getBitmap();
+            // Setting Bitmap to ImageView
+            iv_qr.setImageBitmap(bitmap);*/
+
+
     }
 
     class GedLastIDLaporan extends AsyncTask<String, String, String>{

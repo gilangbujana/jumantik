@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -52,11 +52,28 @@
                 android:textColor="@color/mainColor"
                 android:text="LAPORAN DALAM RUMAH"/>
 
+            <!--
             <de.codecrafters.tableview.TableView
                 android:id="@+id/ltv_dr_detail"
                 android:layout_margin="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="wrap_content"/>-->
+
+            <com.smartown.tableview.library.TableView
+                android:id="@+id/table_dr_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                app:dividerColor="#000000"
+                app:dividerWidth="1px"
+                app:headerColor="#00ffffff"
+                app:headerTextColor="#111111"
+                app:headerTextSize="11sp"
+                app:rowHeight="36dp"
+                app:textColor="#000000"
+                app:textSize="13sp"
+                app:unitColumnWidth="0dp" />
 
             <TextView
                 android:layout_marginTop="15dp"
@@ -70,11 +87,32 @@
                 android:textColor="@color/mainColor"
                 android:text="LAPORAN LUAR RUMAH"/>
 
+            <com.smartown.tableview.library.TableView
+                android:id="@+id/table_lr_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                app:dividerColor="#e1e1e1"
+                app:dividerWidth="1px"
+                app:headerColor="#00ffffff"
+                app:headerTextColor="#111111"
+                app:headerTextSize="10dp"
+                app:rowHeight="36dp"
+                app:textColor="#999999"
+                app:textSize="10dp"
+                app:unitColumnWidth="0dp" />
+
+
+
+            <!--
             <de.codecrafters.tableview.TableView
                 android:id="@+id/ltv_lr_detail"
                 android:layout_margin="15dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="wrap_content"/>-->
+
+
 
             <TextView
                 android:layout_marginLeft="15dp"
@@ -155,4 +193,4 @@
 
     <!--</ScrollView>-->
 
-</LinearLayout>
+</ScrollView>
