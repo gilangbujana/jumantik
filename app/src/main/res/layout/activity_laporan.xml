@@ -20,7 +20,7 @@
         android:id="@+id/laporan_viewpager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="6"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <LinearLayout

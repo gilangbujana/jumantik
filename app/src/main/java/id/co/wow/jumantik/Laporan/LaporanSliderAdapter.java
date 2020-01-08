@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
 import java.util.ArrayList;
@@ -14,7 +17,7 @@ import java.util.ArrayList;
 import id.co.wow.jumantik.R;
 
 
-public class LaporanSliderAdapter extends SliderViewAdapter<LaporanSliderAdapter.LaporanSliderAdapterVH> {
+public class LaporanSliderAdapter extends RecyclerView.Adapter<LaporanSliderAdapter.LaporanSliderAdapterVH> {
     private Context context;
     private ArrayList<String> arrRadioButton;
 
@@ -34,8 +37,10 @@ public class LaporanSliderAdapter extends SliderViewAdapter<LaporanSliderAdapter
 
     }
 
+
+    @NonNull
     @Override
-    public LaporanSliderAdapterVH onCreateViewHolder(ViewGroup parent) {
+    public LaporanSliderAdapterVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_pernyataan, null);
         return new LaporanSliderAdapterVH(inflate);
     }
@@ -79,16 +84,17 @@ public class LaporanSliderAdapter extends SliderViewAdapter<LaporanSliderAdapter
         });
     }
 
+    @Override
+    public int getItemCount() {
+        return 10;
+    }
+
     public ArrayList<String> getArrRadioButton(){
         return this.arrRadioButton;
     }
 
-    @Override
-    public int getCount() {
-        return 10;
-    }
 
-    class LaporanSliderAdapterVH extends SliderViewAdapter.ViewHolder{
+    class LaporanSliderAdapterVH extends RecyclerView.ViewHolder{
         View itemView;
         TextView tv_tmpt_laporan;
         RadioGroup rg_jentik;

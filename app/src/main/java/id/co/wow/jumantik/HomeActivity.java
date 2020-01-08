@@ -2,11 +2,13 @@ package id.co.wow.jumantik;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import com.blikoon.qrcodescanner.QrCodeActivity;
@@ -41,9 +43,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.ref.PhantomReference;
+import java.util.ArrayList;
+import java.util.List;
 
 //import cn.pedant.SweetAlert.SweetAlertDialog;
+import cz.msebera.android.httpclient.NameValuePair;
+import cz.msebera.android.httpclient.message.BasicNameValuePair;
 import id.co.wow.jumantik.Berita.ListBeritaActivity;
+import id.co.wow.jumantik.Laporan.DetailLaporanActivity;
 import id.co.wow.jumantik.Laporan.LaporanActivity;
 import id.co.wow.jumantik.Laporan.ListLaporanActivity;
 import id.co.wow.jumantik.Quiz.QuizActivity;
@@ -57,6 +64,12 @@ public class HomeActivity extends AppCompatActivity
     ImageView iv_jm_home, iv_ujip;
     LinearLayout ll_qr_code, ll_scanner;
     final int REQUEST_CODE_QR_SCAN = 101;
+    private String scanResult;
+    private String pesan;
+    private JSONParser jsonParser;
+    private JSONObject jsonObject;
+    private String dataLaporan;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -67,6 +80,7 @@ public class HomeActivity extends AppCompatActivity
         iv_ujip = (ImageView) findViewById(R.id.iv_ujip_home);
         ll_qr_code = (LinearLayout) findViewById(R.id.ll_qr_code_home);
         ll_scanner = (LinearLayout) findViewById(R.id.ll_scanner_home);
+        jsonParser = new JSONParser();
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -128,23 +142,6 @@ public class HomeActivity extends AppCompatActivity
         startActivityForResult( i,REQUEST_CODE_QR_SCAN);
     }
 
-    public void whatsapp(String phone) {
-        String formattedNumber = phone;
-        try{
-            Intent sendIntent =new Intent("android.intent.action.MAIN");
-            sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
-            sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.setType("text/plain");
-            sendIntent.putExtra(Intent.EXTRA_TEXT,"");
-            sendIntent.putExtra("jid", formattedNumber +"@s.whatsapp.net");
-            sendIntent.setPackage("com.whatsapp");
-            startActivity(sendIntent);
-        }
-        catch(Exception e)
-        {
-            Toast.makeText(HomeActivity.this,"Error/n"+ e.toString(),Toast.LENGTH_SHORT).show();
-        }
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -174,26 +171,6 @@ public class HomeActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.nav_logout) {
-            /*
-            Alerter.create(HomeActivity.this)
-                    .setBackgroundColorRes(R.color.colorPrimaryDark)
-                    .setTitle("APAKAH KAMU YAKIN INGIN KELUAR DARI AKUN INI ?")
-                    .addButton("YA", R.style.AlertButton, new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            PreferenceManager.getDefaultSharedPreferences(HomeActivity.this).edit().clear().commit();
-                            startActivity(new Intent(HomeActivity.this, SignInActivity.class));
-                            finish();
-
-                        }
-                    })
-                    .addButton("TIDAK", R.style.AlertButton, new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            Alerter.hide();
-                        }
-                    })
-                    .show();*/
 
             new AlertDialog.Builder(this)
                     .setTitle("APAKAH KAMU YAKIN INGIN KELUAR DARI AKUN INI ?")
@@ -251,20 +228,31 @@ public class HomeActivity extends AppCompatActivity
             if(data==null)
                 return;
             //Getting the passed result
-            String result = data.getStringExtra("com.blikoon.qrcodescanner.got_qr_scan_relult");
+            scanResult = data.getStringExtra("com.blikoon.qrcodescanner.got_qr_scan_relult");
            // Log.d(LOGTAG,"Have scan result in your app activity :"+ result);
-            AlertDialog alertDialog = new AlertDialog.Builder(HomeActivity.this).create();
-            alertDialog.setTitle("Scan result");
-            alertDialog.setMessage(result);
-            alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
-                    new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                        }
-                    });
-            alertDialog.show();
-
+            new GetDetailLaporan().execute();
         }
+    }
+
+    ProgressDialog pDialog;
+    public void progress(String pesan, Boolean dissmissable){
+
+        pDialog = new ProgressDialog(this);
+        pDialog.setTitle(pesan);
+        pDialog.setCancelable(dissmissable);
+        pDialog.show();
+    }
+
+    public void alert(String pesan, String pos){
+        new AlertDialog.Builder(this)
+                .setTitle(pesan)
+                .setPositiveButton(pos, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                })
+                .show();
     }
 
     public void toInfoActivity(View view){
@@ -286,4 +274,45 @@ public class HomeActivity extends AppCompatActivity
     public void toQuizActivity(View view){
         startActivity(new Intent(HomeActivity.this, QuizActivity.class));
     }
+
+
+    class GetDetailLaporan extends AsyncTask<String, String, String> {
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            progress("Tunggu Ya :)", false);
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+            try {
+                List<NameValuePair> params = new ArrayList<>();
+                params.add(new BasicNameValuePair("id_laporan", scanResult.trim()));
+                String path = "";
+                path = jsonParser.getIP() + "select_laporan_scan.php";
+                jsonObject = jsonParser.makeHttpRequest(path, "POST", params);
+                pesan = jsonObject.getString("pesan");
+                dataLaporan = jsonObject.getJSONObject("data").toString();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            pDialog.hide();
+            if(pesan.equals("1")){
+              Intent intent = new Intent(HomeActivity.this, DetailLaporanActivity.class);
+              intent.putExtra("detailLaporan", dataLaporan);
+              startActivity(intent);
+
+            }else{
+                alert("Maaf Proses Scan gagal :(", "OKE");
+            }
+        }
+    }
+
 }

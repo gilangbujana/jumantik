@@ -37,7 +37,7 @@ public class ListLaporanActivity extends AppCompatActivity {
     JSONArray jsonArray;
     JSONObject jsonObject;
     JSONParser jsonParser;
-    String telp, pesan;
+    String telp, pesan, status;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +52,7 @@ public class ListLaporanActivity extends AppCompatActivity {
             try {
                 jsonObject = new JSONObject(sp.getString("jsonDataUser", ""));
                 telp = jsonObject.getString("telp");
+                status = jsonObject.getString("status");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -96,7 +97,11 @@ public class ListLaporanActivity extends AppCompatActivity {
             try {
                 List<NameValuePair> params = new ArrayList<>();
                 params.add(new BasicNameValuePair("telp", telp));
-                String path = jsonParser.getIP() + "select_laporan_user.php";
+                String path = "";
+                if(status.equalsIgnoreCase("kader"))
+                    path = jsonParser.getIP() + "select_laporan_kader.php";
+                else
+                    path = jsonParser.getIP() + "select_laporan_user.php";
                 jsonObject = jsonParser.makeHttpRequest(path, "POST", params);
                 pesan = jsonObject.getString("pesan");
                 jsonArray = jsonObject.getJSONArray("data");

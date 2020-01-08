@@ -200,6 +200,7 @@ public class LaporanActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            progress("Tunggu Proses Submit Ya :)", false, false, false);
         }
 
         @Override
@@ -249,8 +250,17 @@ public class LaporanActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
+            pDialog.hide();
             if(sukses==1) {
-                alert("LAPORAN BERHASIL DIKIRIM :)", "OK", null);
+                new AlertDialog.Builder(LaporanActivity.this)
+                        .setTitle("LAPORAN BERHASIL DIKIRIM :)")
+                        .setPositiveButton("OKE", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                finish();
+                            }
+                        })
+                        .show();
             }
             else
                 alert("YAHHH LAPORAN GAGAL DIKIRIM :( COBA DEH PERIKSA JARINGAN INTERNET KAMU " + hasil, "OKE", null);

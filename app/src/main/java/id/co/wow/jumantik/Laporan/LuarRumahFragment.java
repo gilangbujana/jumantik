@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
@@ -49,18 +51,12 @@ public class LuarRumahFragment extends Fragment {
 
         itemView = inflater.inflate(R.layout.fragment_luar_rumah, container, false);
 
-        SliderView sliderView = itemView.findViewById(R.id.imageSlider_laporan);
+        RecyclerView recyclerView = itemView.findViewById(R.id.imageSlider_laporan);
         btn_add_foto_dan_laporan = (FloatingActionButton) itemView.findViewById(R.id.btn_add_foto_dan_laporan);
         adapter = new LaporanSliderAdapter(getActivity());
-        sliderView.setSliderAdapter(adapter);
-        sliderView.setIndicatorAnimation(IndicatorAnimations.WORM); //set indicator animation by using SliderLayout.IndicatorAnimations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
-        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
-        sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
-        sliderView.setIndicatorSelectedColor(R.color.mainColor);
-        sliderView.setIndicatorUnselectedColor(Color.GRAY);
-        sliderView.setScrollTimeInSec(4); //set scroll delay in seconds :
-        sliderView.setAutoCycle(false);
-        sliderView.startAutoCycle();
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(adapter);
 
         btn_add_foto_dan_laporan.setOnClickListener(new View.OnClickListener() {
             @Override

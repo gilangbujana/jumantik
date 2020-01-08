@@ -4,11 +4,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp">
+    android:padding="5dp">
 
     <TextView
         android:id="@+id/tv_tmpt_laporan"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/mainColor"
         android:text="1. Bak Mandi"
@@ -22,7 +22,7 @@
 
     <RadioButton
         android:id="@+id/rb_aedes"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Jentik Aedes"
         android:paddingLeft="10dp"
@@ -31,7 +31,7 @@
 
     <RadioButton
         android:id="@+id/rb_nonaedes"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Jentik Non Aedes"
         android:paddingLeft="10dp"
@@ -40,7 +40,7 @@
 
     <RadioButton
         android:id="@+id/rb_tdkjentik"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tidak ada Jentik"
         android:paddingLeft="10dp"

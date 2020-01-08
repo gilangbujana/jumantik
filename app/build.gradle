@@ -48,6 +48,7 @@ dependencies {
     implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.4'
     implementation 'com.github.kenglxn.QRGen:android:2.6.0'
     implementation 'com.github.levitnudi:LegacyTableView:1.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
     implementation project(path: ':tableview')
     //implementation 'cn.pedant.sweetalert:library:1.3'
 

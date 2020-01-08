@@ -38,7 +38,36 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/tv_label_identitas"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/mainColor"
+                android:text="IDENTITAS WARGA"
+                android:visibility="gone"/>
 
+            <com.smartown.tableview.library.TableView
+                android:id="@+id/table_identitas_warga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                app:dividerColor="#000000"
+                app:dividerWidth="1px"
+                app:headerColor="#00ffffff"
+                app:headerTextColor="#111111"
+                app:headerTextSize="11sp"
+                app:rowHeight="36dp"
+                app:textColor="#000000"
+                app:textSize="10dp"
+                app:unitColumnWidth="0dp"
+                android:visibility="gone"/>
 
             <TextView
                 android:layout_marginTop="15dp"
@@ -72,7 +101,7 @@
                 app:headerTextSize="11sp"
                 app:rowHeight="36dp"
                 app:textColor="#000000"
-                app:textSize="13sp"
+                app:textSize="10dp"
                 app:unitColumnWidth="0dp" />
 
             <TextView
@@ -93,13 +122,13 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_margin="8dp"
-                app:dividerColor="#e1e1e1"
+                app:dividerColor="#000000"
                 app:dividerWidth="1px"
                 app:headerColor="#00ffffff"
                 app:headerTextColor="#111111"
                 app:headerTextSize="10dp"
                 app:rowHeight="36dp"
-                app:textColor="#999999"
+                app:textColor="#000000"
                 app:textSize="10dp"
                 app:unitColumnWidth="0dp" />
 
@@ -189,7 +218,22 @@
                     android:textStyle="bold"
                     android:background="@drawable/unverified"/>
 
+
+            <Button
+                android:id="@+id/btn_verifikasi_detail"
+                android:visibility="gone"
+                android:onClick="onVerifikasiButtonClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="KLIK UNTUK VERIFIKASI"
+                android:layout_margin="10dp"
+                android:background="@drawable/verified"
+                android:textColor="@color/white"/>
+
         </LinearLayout>
+
+
 
     <!--</ScrollView>-->
 
